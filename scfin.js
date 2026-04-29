@@ -42,10 +42,7 @@ fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vS8JRp19JXRxlAuvCJMaDErzi
            b.Genre?.trim() === "Non-Fiction"
     );
 
-    const finNonfic = books.filter(
-  b => b.Status?.trim() === "Completed" &&
-       b.Genre?.trim() === "Non-Fiction"
-);
+
 
 const finRomance = books.filter(
   b => b.Status?.trim() === "Completed" &&
