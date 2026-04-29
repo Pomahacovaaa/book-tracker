@@ -27,12 +27,74 @@ fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vS8JRp19JXRxlAuvCJMaDErzi
            b.Genre?.trim() === "Non-Fiction"
     );
 
+    const plannedMystery = books.filter(
+      b => b.Status?.trim() === "Completed" &&
+           b.Genre?.trim() === "Mystery"
+    );
 
+    const plannedSciFi = books.filter(
+      b => b.Status?.trim() === "Completed" &&
+           b.Genre?.trim() === "Sci-Fi"
+    );
 
     const plannedThriller = books.filter(
       b => b.Status?.trim() === "Planned" &&
            b.Genre?.trim() === "Thriller"
     );
+    const plannedRomance = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Romance"
+);
+
+const plannedDystopian = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Dystopian"
+);
+
+const plannedHorror = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Horror"
+);
+
+const plannedAdventure = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Adventure"
+);
+
+const plannedHistorical = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Historical"
+);
+
+const plannedBiography = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Biography"
+);
+
+const plannedMemoir = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Memoir"
+);
+
+const plannedPsychology = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Psychology"
+);
+
+const plannedSelfHelp = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Self-Help"
+);
+
+const plannedCrime = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Crime"
+);
+
+const plannedYoungAdult = books.filter(
+  b => b.Status?.trim() === "Planned" &&
+       b.Genre?.trim() === "Young Adult"
+);
 
     // DISPLAY
     document.getElementById("nonfic").textContent =
@@ -41,10 +103,47 @@ fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vS8JRp19JXRxlAuvCJMaDErzi
     document.getElementById("fantasy").textContent =
       plannedFantasy.map(b => b.Title).join(", ");
 
-
-
     document.getElementById("thriller").textContent =
       plannedThriller.map(b => b.Title).join(", ");
+
+    document.getElementById("scifi").textContent =
+      plannedFantasy.map(b => b.Title).join(", ");
+
+    document.getElementById("mystery").textContent =
+      plannedThriller.map(b => b.Title).join(", ");
+
+// document.getElementById("romance").textContent =
+//   plannedRomance.map(b => b.Title).join(", ");
+
+// document.getElementById("dystopian").textContent =
+//   plannedDystopian.map(b => b.Title).join(", ");
+
+// document.getElementById("horror").textContent =
+//   plannedHorror.map(b => b.Title).join(", ");
+
+// document.getElementById("adventure").textContent =
+//   plannedAdventure.map(b => b.Title).join(", ");
+
+// document.getElementById("historical").textContent =
+//   plannedHistorical.map(b => b.Title).join(", ");
+
+// document.getElementById("biography").textContent =
+//   plannedBiography.map(b => b.Title).join(", ");
+
+// document.getElementById("memoir").textContent =
+//   plannedMemoir.map(b => b.Title).join(", ");
+
+// document.getElementById("psychology").textContent =
+//   plannedPsychology.map(b => b.Title).join(", ");
+
+// document.getElementById("selfhelp").textContent =
+//   plannedSelfHelp.map(b => b.Title).join(", ");
+
+// document.getElementById("crime").textContent =
+//   plannedCrime.map(b => b.Title).join(", ");
+
+// document.getElementById("ya").textContent =
+//   plannedYoungAdult.map(b => b.Title).join(", ");
 
 const reading = books.filter(b => b.Status?.trim() === "Reading");
 
