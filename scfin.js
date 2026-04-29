@@ -146,7 +146,9 @@ document.getElementById("mystery").textContent =
 //   finCrime.map(b => `${b.Title} ${b.Rating ? "(" + b.Rating + "/5)" : ""}`).join(", ");
 
 // document.getElementById("ya").textContent =
-//   finYA.map(b => `${b.Title} ${b.Rating ? "(" + b.Rating + "/5)" : ""}`).join(", ");const reading = books.filter(b => b.Status?.trim() === "Reading");
+//   finYA.map(b => `${b.Title} ${b.Rating ? "(" + b.Rating + "/5)" : ""}`).join(", ");
+    
+const reading = books.filter(b => b.Status?.trim() === "Reading");
 
 document.getElementById("cr").textContent =
   reading
